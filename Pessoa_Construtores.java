@@ -1,6 +1,5 @@
 package Construtores;
 
-import Tarefa.Endereco;
 import java.util.Scanner;
 
 public class Pessoa {
@@ -9,7 +8,15 @@ public class Pessoa {
     Endereco ende=new Endereco();
     
     void cadastrar(){
-        System.out.printf("");
+        System.out.printf("Digite o nome: ");
+        nome=input.nextLine();
+        System.out.printf("Digite o cpf: ");
+        cpf=input.nextLine();
+        ende.cadastrar();
     }
     
+    public Pessoa(String n, String c){
+        nome=n;
+        cpf=c;
+    }
 }
